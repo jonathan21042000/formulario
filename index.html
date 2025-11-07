@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Dota 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registro Dota 2</h1>
+    <form id="dotaForm">
+        <label for="nombre">Nombre de Invocador</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="fecha">Fecha de nacimiento</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="heroe">Héroe favorito</label>
+        <select id="heroe" name="heroe" required>
+            <option value="">Selecciona uno</option>
+            <option value="Invoker">Invoker</option>
+            <option value="Phantom Assassin">Phantom Assassin</option>
+            <option value="Pudge">Pudge</option>
+            <option value="Crystal Maiden">Crystal Maiden</option>
+            <option value="Juggernaut">Juggernaut</option>
+        </select>
+
+        <label>¿Prefieres jugar?</label>
+        <div class="radio-group">
+            <label><input type="radio" name="modo" value="Solo" required> Solo</label>
+            <label><input type="radio" name="modo" value="En equipo"> En equipo</label>
+        </div>
+
+        <label>¿Rol preferido?</label>
+        <div class="radio-group">
+            <label><input type="radio" name="rol" value="Carry" required> Carry</label>
+            <label><input type="radio" name="rol" value="Support"> Support</label>
+        </div>
+
+        <button type="submit">Registrarse</button>
+    </form>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
